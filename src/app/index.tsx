@@ -1,5 +1,6 @@
 import { welcome } from '@/data/welcome';
 import { View } from 'react-native';
+import { Steps } from './components/steps';
 import { Welcome } from './components/welcome';
 
 export default function Index() {
@@ -14,6 +15,8 @@ export default function Index() {
         title={title}
         subtitle={subtitle}
       />
+
+      <Steps />
     </View>
   );
 }
