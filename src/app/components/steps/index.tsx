@@ -10,16 +10,19 @@ export function Steps() {
       <Step
         title='Encontre estabelecimentos'
         subtitle='Veja locais perto de você que são parceiros Nearby'
+        icon='MapPin'
       />
 
       <Step
         title='Ative o cupom com QR Code'
         subtitle='Escaneie o código no estabelecimento para usar o benefício'
+        icon='QrCode'
       />
 
       <Step
         title='Garanta vantagens perto de você'
         subtitle='Ative cupons onde estiver, em diferentes tipos de estabelecimento '
+        icon='Ticket'
       />
 
     </View>
