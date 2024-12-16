@@ -8,7 +8,7 @@ type props = {
 
 export function Welcome({ title, subtitle }: props) {
   return (
-    <View style={s.container}>
+    <View>
       <Image source={require('@/assets/logo.png')} style={s.logo} />
       <Text style={s.title}>{title}</Text>
       <Text style={s.subtitle}>{subtitle}</Text>

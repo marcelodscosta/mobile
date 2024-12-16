@@ -8,9 +8,6 @@ export const s = StyleSheet.create({
     marginTop: 24,
     marginBottom: 28
   },
-  container: {
-    
-  },
   title: { 
     fontFamily: fontFamily.bold, 
     fontSize: 24, 

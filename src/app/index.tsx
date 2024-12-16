@@ -1,7 +1,9 @@
+import { welcome } from '@/data/welcome';
 import { View } from 'react-native';
 import { Welcome } from './components/welcome';
 
 export default function Index() {
+  const { title, subtitle } = welcome;
   return (
     <View style={{
       flex: 1,
@@ -9,8 +11,8 @@ export default function Index() {
       padding: 40
     }}>
       <Welcome
-        title='Boas vindas ao Nearby!'
-        subtitle='Tenha cupons de vantagem para usar em seus estabelecimentos favoritos.'
+        title={title}
+        subtitle={subtitle}
       />
     </View>
   );
