@@ -11,13 +11,25 @@ type Props = PressableProps & {
   name: string
 }
 
+function getNameById(id: string) {
+  const idNameMap: { [key: string]: string } = {
+    "Alimentação": "Apple",
+    "Compras": "ShoppingBag",
+    "Hospedagem": "Bed",
+    "Cinema": "Monitor",
+    "Padaria": "Coffee"
+  };
+
+  return idNameMap[id];
+}
+
 export function Category({ icon, isSelected = false, name, ...rest }: Props) {
 
-
+  const infoIcon = getNameById(name) as keyof typeof icons
 
   return (
     <Pressable style={[s.container, isSelected && s.containerSelected]} {...rest}>
-      {icon && <Icon name={icon} size={16} color={colors.gray[isSelected ? 100 : 400]} />}
+      <Icon name={infoIcon} size={16} color={colors.gray[isSelected ? 100 : 400]} />
       <Text style={[s.name, isSelected && s.nameSelected]}>
         {name}
       </Text>
